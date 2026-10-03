@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Footage Detector</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="topbar">
+
+        <div>
+            <h1>SMART FOOTAGE DETECTOR</h1>
+            <p>AI VIDEO INTELLIGENCE PLATFORM</p>
+        </div>
+
+        <div class="system-status">
+            <span class="status-dot"></span>
+            API ONLINE
+        </div>
+
+    </header>
+
+
+    <main class="dashboard">
+
+        <!-- STAT CARDS -->
+
+        <section class="stats">
+
+            <div class="stat-card">
+                <span class="stat-label">INCIDENTS</span>
+                <span id="incident-count" class="stat-value">0</span>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-label">HIGH SEVERITY</span>
+                <span id="high-count" class="stat-value">0</span>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-label">OPEN ALERTS</span>
+                <span id="open-count" class="stat-value">0</span>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-label">RESTRICTED ZONE</span>
+                <span id="restricted-count" class="stat-value">0</span>
+            </div>
+
+        </section>
+
+
+        <!-- INCIDENT SECTION -->
+
+        <section class="incident-panel">
+
+            <div class="panel-header">
+
+                <div>
+                    <h2>Security Incidents</h2>
+                    <p>Live incidents detected by the AI engine</p>
+                </div>
+
+                <button id="refresh-button">
+                    Refresh
+                </button>
+
+            </div>
+
+
+            <div id="incident-container">
+
+                <div class="loading">
+                    Loading incidents...
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        Smart Footage Detector
+
+        <span>AI Video Intelligence</span>
+
+    </footer>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
